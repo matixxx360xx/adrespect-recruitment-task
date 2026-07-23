@@ -11,7 +11,7 @@ function Instagram() {
           <p className="w-full font-['Inter'] font-normal text-[16px] leading-[150%] tracking-[-0.01em] text-[#F5F0EC]">
             Śledź nasze najnowsze realizacje!
           </p>
-          <button className="flex flex-row items-center justify-center py-[10px] px-[24px] pb-[12px] gap-[10px] w-[124px] h-[46px] bg-[#F5F0EC] rounded-[200px] cursor-pointer hover:opacity-90 transition-opacity">
+          <button className="flex flex-row items-center justify-center py-[10px] px-[24px] pb-[12px] gap-[10px] w-[124px] h-[46px] bg-[#F5F0EC] hover:bg-[#e4ded8] active:bg-[#e4ded8] transition-colors rounded-[200px] cursor-pointer">
             <span className="font-['Inter'] font-normal text-[16px] leading-[150%] text-center text-[#1B5B31]">
               Instagram
             </span>

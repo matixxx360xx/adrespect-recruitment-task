@@ -21,12 +21,23 @@ function OFirmie() {
           <p className="font-normal font-[Inter] text-[16px] leading-[150%] tracking-[-0.01em] text-[#F5F0EC] self-stretch">
             Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
           </p>
-          <button className="box-border flex flex-row items-center gap-[8px] max-w-[194px] max-h-[50px] border border-[#F5F0EC] rounded-[200px] pt-[12px] px-[22px] pb-[14px] cursor-pointer hover:bg-[#F5F0EC]/10 transition-colors">
-            <span className="max-w-[126px] max-h-[24px] font-['Inter'] font-normal text-center text-[16px] leading-[150%] text-[#F5F0EC]">Poznaj nas bliżej</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <button className="box-border flex flex-row items-center gap-[8px] max-w-[194px] max-h-[50px] border border-[#F5F0EC] rounded-[200px] pt-[12px] px-[22px] pb-[14px] cursor-pointer hover:bg-[#F5F0EC]/10 active:bg-[#F5F0EC]/10 transition-colors group">
+            <span className="max-w-[126px] max-h-[24px] font-['Inter'] font-normal text-center text-[16px] leading-[150%] text-[#F5F0EC]">
+              Poznaj nas bliżej
+            </span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="transition-transform duration-300 group-hover:translate-x-1.5 group-active:translate-x-1.5 group-focus:translate-x-1.5"
+            >
               <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC" />
             </svg>
           </button>
+
         </div>
       </section>
     </>

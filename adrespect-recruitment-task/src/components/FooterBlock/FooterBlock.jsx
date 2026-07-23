@@ -3,7 +3,6 @@ function Footer() {
     <footer className="flex flex-col items-center py-12 md:py-20 px-6 sm:px-8 md:px-[120px] lg:px-[256px] gap-12 md:gap-[120px] w-full bg-[#111111] mx-auto font-['Inter']">
       <div className="flex flex-col items-start p-0 gap-10 md:gap-[62px] w-full max-w-[1040px]">
         
-        {/* Górna sekcja (Logo + CTA) */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center w-full gap-8 lg:gap-0">
           <div className="w-[114.37px] h-[19px] text-[white] text-[19px] leading-[19px]">
             <span className="font-black">giard</span>design
@@ -12,7 +11,7 @@ function Footer() {
             <p className="w-full sm:w-[290px] font-normal text-[16px] leading-[150%] tracking-[-0.01em] text-[#F5F0EC]">
               Daj znać, co możemy dla Ciebie zrobić!
             </p>
-            <button className="flex flex-row items-center justify-center py-[12px] px-[24px] pb-[14px] gap-[10px] w-full sm:w-[208px] h-[50px] bg-[#1B5B31] hover:bg-[#23743e] transition-colors rounded-[200px] cursor-pointer">
+            <button className="flex flex-row items-center justify-center py-[12px] px-[24px] pb-[14px] gap-[10px] w-full sm:w-[230px] h-[50px] bg-[#1B5B31] hover:bg-[#23743e] active:bg-[#23743e] transition-colors rounded-[200px] cursor-pointer group">
               <span className="font-normal text-[16px] leading-[150%] text-center text-[#F5F0EC]">
                 Skontaktuj się z nami
               </span>
@@ -22,7 +21,6 @@ function Footer() {
 
         <hr className="w-full border-t border-[#F5F0EC] opacity-20 self-stretch" />
 
-        {/* Środkowa sekcja (Linki + Kontakt) */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center p-0 gap-8 lg:gap-0 w-full max-w-[1040px] self-stretch">
           <div className="flex flex-wrap flex-row items-center p-0 gap-x-8 gap-y-4 w-full lg:w-[379px]">
             <a href="#" className="font-normal text-[14px] leading-[150%] tracking-[-0.01em] text-[#F5F0EC] hover:text-[#1B5B31] transition-colors">
@@ -48,7 +46,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Dolna sekcja (Copyright + Made by) */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-0 gap-6 sm:gap-4 w-full max-w-[1040px]">
           <p className="font-normal text-[16px] leading-[150%] tracking-[-0.01em] text-[#F5F0EC]">
             Prawa zastrzeżone © 2022

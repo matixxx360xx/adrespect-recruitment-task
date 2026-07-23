@@ -62,13 +62,19 @@ function Hero() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-start p-0 gap-[16px] sm:gap-[36px] w-full sm:max-w-[493px]">
-                <button className="flex flex-row items-center justify-center pt-[12px] px-[24px] pb-[14px] gap-[10px] w-full sm:w-[208px] h-[50px] bg-[#1B5B31] rounded-[200px] text-white hover:bg-[#154726] transition-colors cursor-pointer text-[14px] sm:text-[16px]">
+                <button className="flex flex-row items-center justify-center pt-[12px] px-[24px] pb-[14px] gap-[10px] w-full sm:w-[208px] h-[50px] bg-[#1B5B31] rounded-[200px] text-white hover:bg-[#154726] active:bg-[#154726] transition-colors cursor-pointer text-[14px] sm:text-[16px]">
                   Skontaktuj się
                 </button>
 
-                <button className="box-border flex flex-row items-center justify-center pt-[12px] px-[22px] pb-[14px] gap-[8px] w-full sm:w-[249px] h-[50px] border border-[#1B5B31] text-[#1B5B31] rounded-[200px] hover:bg-[#1B5B31]/10 transition-colors cursor-pointer text-[14px] sm:text-[16px]">
+                <button className="box-border flex flex-row items-center justify-center pt-[12px] px-[22px] pb-[14px] gap-[8px] w-full sm:w-[249px] h-[50px] border border-[#1B5B31] text-[#1B5B31] rounded-[200px] hover:bg-[#1B5B31]/10 active:bg-[#1B5B31]/10 transition-colors cursor-pointer text-[14px] sm:text-[16px] group">
                   Zobacz realizacje{" "}
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <svg 
+                    width="16" 
+                    height="16" 
+                    viewBox="0 0 16 16" 
+                    fill="none" 
+                    className="transition-transform duration-300 group-hover:translate-x-1.5 group-active:translate-x-1.5 group-focus:translate-x-1.5"
+                  >
                     <path d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 1.02988e-07L7.36358 8.78099e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00471 16L16 7.99529Z" fill="#1B5B31" />
                   </svg>
                 </button>
@@ -84,14 +90,14 @@ function Hero() {
             <div className="absolute inset-0 bg-white/10 pointer-events-none" />
             
             <div className="absolute bottom-0 right-0 z-10 flex flex-row items-center justify-center px-6 sm:px-[32px] py-4 sm:py-[24px] gap-6 sm:gap-[32px] w-auto sm:w-[192px] h-auto sm:h-[96px] bg-[#F5F0EC]">
-              <button onClick={prevSlide} className="p-1 hover:opacity-60 transition-opacity cursor-pointer text-[#111111] flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button onClick={prevSlide} className="p-1 hover:opacity-60 active:opacity-60 transition-opacity cursor-pointer text-[#111111] flex items-center justify-center group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:-translate-x-1 group-active:-translate-x-1 group-focus:-translate-x-1">
                   <path d="M20 12H4M4 12L10 6M4 12L10 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
 
-              <button onClick={nextSlide} className="p-1 hover:opacity-60 transition-opacity cursor-pointer text-[#111111] flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button onClick={nextSlide} className="p-1 hover:opacity-60 active:opacity-60 transition-opacity cursor-pointer text-[#111111] flex items-center justify-center group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1 group-active:translate-x-1 group-focus:translate-x-1">
                   <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
