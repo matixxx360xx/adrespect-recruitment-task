@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import Macy from 'macy';
 
 const imagesList = [
@@ -54,6 +55,17 @@ function Realizacje() {
     }
   }, [isExpanded]);
 
+  useEffect(() => {
+    if (activeImageIndex !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [activeImageIndex]);
+
   const heights = [
     "h-[450px]", "h-[320px]", "h-[320px]", 
     "h-[550px]", "h-[400px]", "h-[450px]", 
@@ -74,7 +86,7 @@ function Realizacje() {
   };
 
   return (
-    <section className="relative flex flex-col items-start pt-[60px] md:pt-[120px] pr-0 pl-0 gap-[48px] md:gap-[96px] bg-[#DCC1AB] overflow-hidden">
+    <section className="relative flex flex-col items-start pt-[60px] md:pt-[120px] pr-0 pl-0 gap-[48px] md:gap-[96px] bg-[#DCC1AB]">
 
       <div className="flex flex-col items-start px-6 md:pl-[160px] gap-[16px] self-stretch z-10">
         <p className="font-['Inter'] font-normal text-[12px] md:text-[16px] leading-[150%] text-[#1B5B31] tracking-[-0.01em]">
@@ -107,7 +119,7 @@ function Realizacje() {
           })}
         </div>
 
-        <div className={`absolute w-full md:w-[1440px] h-[1000px] left-0 bottom-[0] bg-gradient-to-t from-[#DCC1AB] via-[#DCC1AB]/80 to-[rgba(214,183,158,0)] pointer-events-none z-20 transition-all duration-700 ${isExpanded ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}`} />
+        <div className={`absolute w-full md:w-[1440px] h-[1000px] left-0 bottom-[0] bg-gradient-to-t from-[#DCC1AB] via-[#DCC1AB]/80 to-[rgba(214,183,158,0)] pointer-events-none z-25 transition-all duration-700 ${isExpanded ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}`} />
 
         <div className="flex justify-center w-full relative z-30 my-8">
           <button 
@@ -123,44 +135,56 @@ function Realizacje() {
 
       </div>
 
-      {activeImageIndex !== null && (
+      {activeImageIndex !== null && createPortal(
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 transition-opacity duration-300 animate-fadeIn"
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/90 p-4 transition-opacity duration-300 animate-fadeIn"
           onClick={() => setActiveImageIndex(null)}
         >
           <div 
-            className="relative max-w-5xl max-h-[90vh] flex items-center justify-center p-2"
+            className="relative w-full max-w-4xl max-h-[90vh] flex flex-col items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-
             <button 
               onClick={() => setActiveImageIndex(null)}
-              className="absolute top-2 right-2 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white hover:bg-black transition-colors cursor-pointer"
+              className="absolute -top-10 right-0 sm:top-2 sm:right-2 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors cursor-pointer"
+              aria-label="Zamknij"
             >
               ✕
             </button>
 
-            <button 
-              onClick={prevImage}
-              className="absolute left-4 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white hover:bg-black transition-colors cursor-pointer"
-            >
-              ❮
-            </button>
-            <div className="overflow-hidden rounded-xl bg-white p-2 shadow-2xl max-h-[85vh]">
+            <div className="flex items-center justify-center w-full overflow-hidden rounded-2xl">
               <img 
                 src={imagesList[activeImageIndex]} 
                 alt="Powiększona realizacja" 
-                className="max-h-[80vh] w-auto max-w-full object-contain rounded-lg" 
+                className="max-h-[72vh] sm:max-h-[80vh] w-auto max-w-full object-contain rounded-xl shadow-2xl block mx-auto" 
               />
             </div>
-            <button 
-              onClick={nextImage}
-              className="absolute right-4 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white hover:bg-black transition-colors cursor-pointer"
-            >
-              ❯
-            </button>
+
+            <div className="flex items-center justify-center gap-6 mt-4 z-20">
+              <button 
+                onClick={prevImage}
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white text-lg hover:bg-white/20 transition-colors cursor-pointer"
+                aria-label="Poprzednie zdjęcie"
+              >
+                ❮
+              </button>
+
+              <span className="text-white/80 font-['Inter'] text-sm">
+                {activeImageIndex + 1} / {maxVisibleIndex + 1}
+              </span>
+
+              <button 
+                onClick={nextImage}
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white text-lg hover:bg-white/20 transition-colors cursor-pointer"
+                aria-label="Następne zdjęcie"
+              >
+                ❯
+              </button>
+            </div>
+
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
     </section>

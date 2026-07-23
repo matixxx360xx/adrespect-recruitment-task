@@ -18,12 +18,13 @@ function Oferta() {
 
       <article className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[32px] lg:gap-[64px] w-full max-w-[1440px] px-0 md:px-[40px] lg:px-[88px]">
 
-        <a href="#projekty" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+        {/* Karta 1 */}
+        <a href="#projekty" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <img src="src/assets/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
-              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31]">
+              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
                 Projekty
               </h3>
               <p className="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.01em] text-[#111111]">
@@ -33,18 +34,19 @@ function Oferta() {
           </div>
           <span className="box-border flex flex-row items-center justify-start pb-1 gap-[10px] w-[171px] h-[28px] border-b border-[#1B5B31] text-[#1B5B31]">
             Dowiedz się więcej
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5 group-active:translate-x-1.5">
               <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31" />
             </svg>
           </span>
         </a>
 
-        <a href="#wizualizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+        {/* Karta 2 */}
+        <a href="#wizualizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <img src="src/assets/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
-              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31]">
+              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
                 Wizualizacje
               </h3>
               <p className="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.01em] text-[#111111]">
@@ -54,18 +56,19 @@ function Oferta() {
           </div>
           <span className="box-border flex flex-row items-center justify-start pb-1 gap-[10px] w-[171px] h-[28px] border-b border-[#1B5B31] text-[#1B5B31]">
             Dowiedz się więcej
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5 group-active:translate-x-1.5">
               <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31" />
             </svg>
           </span>
         </a>
 
-        <a href="#realizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
+        {/* Karta 3 */}
+        <a href="#realizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
+            <img src="src/assets/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
-              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31]">
+              <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
                 Realizacje
               </h3>
               <p className="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.01em] text-[#111111]">
@@ -75,7 +78,7 @@ function Oferta() {
           </div>
           <span className="box-border flex flex-row items-center justify-start pb-1 gap-[10px] w-[200px] h-[28px] border-b border-[#1B5B31] text-[#1B5B31]">
             Zobacz nasze realizacje
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform duration-300 group-hover:translate-x-1.5 group-active:translate-x-1.5">
               <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31" />
             </svg>
           </span>
