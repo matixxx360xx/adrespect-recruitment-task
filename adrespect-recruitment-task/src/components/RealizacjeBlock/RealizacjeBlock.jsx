@@ -3,18 +3,18 @@ import { createPortal } from 'react-dom';
 import Macy from 'macy';
 
 const imagesList = [
-  "/Photo (1).png",
-  "/Photo (2).png",
-  "/Photo (3).png",
-  "/Photo (4).png",
-  "/Photo (5).png",
-  "/Photo (6).png",
-  "/Photo (7).png",
-  "/Photo (8).png",
-  "/Photo (9).png",
-  "/Photo (1).png",
-  "/Photo (2).png",
-  "/Photo (3).png"
+  `${import.meta.env.BASE_URL}Photo (1).png`,
+  `${import.meta.env.BASE_URL}Photo (2).png`,
+  `${import.meta.env.BASE_URL}Photo (3).png`,
+  `${import.meta.env.BASE_URL}Photo (4).png`,
+  `${import.meta.env.BASE_URL}Photo (5).png`,
+  `${import.meta.env.BASE_URL}Photo (6).png`,
+  `${import.meta.env.BASE_URL}Photo (7).png`,
+  `${import.meta.env.BASE_URL}Photo (8).png`,
+  `${import.meta.env.BASE_URL}Photo (9).png`,
+  `${import.meta.env.BASE_URL}Photo (1).png`,
+  `${import.meta.env.BASE_URL}Photo (2).png`,
+  `${import.meta.env.BASE_URL}Photo (3).png`
 ];
 
 function Realizacje() {
@@ -86,7 +86,7 @@ function Realizacje() {
   };
 
   return (
-    <section className="relative flex flex-col items-start pt-[60px] md:pt-[120px] pr-0 pl-0 gap-[48px] md:gap-[96px] bg-[#DCC1AB]">
+    <section id="realizacje" className="relative flex flex-col items-start pt-[60px] md:pt-[120px] pr-0 pl-0 gap-[48px] md:gap-[96px] bg-[#DCC1AB]">
 
       <div className="flex flex-col items-start px-6 md:pl-[160px] gap-[16px] self-stretch z-10">
         <p className="font-['Inter'] font-normal text-[12px] md:text-[16px] leading-[150%] text-[#1B5B31] tracking-[-0.01em]">

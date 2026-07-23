@@ -4,17 +4,17 @@ const slides = [
   {
     title: "Nowoczesna aranżacja Twojego ogrodu",
     description: "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.",
-    image: "/photo-1514621166532-aa7eb1a3a2f4.png"
+    image: `${import.meta.env.BASE_URL}photo-1514621166532-aa7eb1a3a2f4.png`
   },
   {
     title: "Zielona przestrzeń dopasowana do Ciebie",
     description: "Tworzymy unikalne projekty ogrodów, które łączą w sobie funkcjonalność, elegancję oraz harmonię z otaczającą przyrodą.",
-    image: "/photo-1514621166532-aa7eb1a3a2f4.png"
+    image: `${import.meta.env.BASE_URL}photo-1514621166532-aa7eb1a3a2f4.png`
   },
   {
     title: "Profesjonalizm i pasja w każdym detalu",
     description: "Od koncepcji po wykonanie – dbamy o każdy etap realizacji, aby Twój ogród zachwycał przez cały rok.",
-    image: "/photo-1514621166532-aa7eb1a3a2f4.png"
+    image: `${import.meta.env.BASE_URL}photo-1514621166532-aa7eb1a3a2f4.png`
   }
 ];
 
