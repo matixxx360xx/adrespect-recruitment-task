@@ -20,7 +20,7 @@ function Oferta() {
 
         <a href="#projekty" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="public/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
@@ -41,7 +41,7 @@ function Oferta() {
 
         <a href="#wizualizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="public/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
@@ -62,7 +62,7 @@ function Oferta() {
 
         <a href="#realizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="public/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
