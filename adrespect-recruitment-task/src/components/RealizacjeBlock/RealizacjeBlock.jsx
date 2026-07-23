@@ -3,18 +3,18 @@ import { createPortal } from 'react-dom';
 import Macy from 'macy';
 
 const imagesList = [
-  "src/assets/Photo (1).png",
-  "src/assets/Photo (2).png",
-  "src/assets/Photo (3).png",
-  "src/assets/Photo (4).png",
-  "src/assets/Photo (5).png",
-  "src/assets/Photo (6).png",
-  "src/assets/Photo (7).png",
-  "src/assets/Photo (8).png",
-  "src/assets/Photo (9).png",
-  "src/assets/Photo (1).png",
-  "src/assets/Photo (2).png",
-  "src/assets/Photo (3).png"
+  "public/Photo (1).png",
+  "public/Photo (2).png",
+  "public/Photo (3).png",
+  "public/Photo (4).png",
+  "public/Photo (5).png",
+  "public/Photo (6).png",
+  "public/Photo (7).png",
+  "public/Photo (8).png",
+  "public/Photo (9).png",
+  "public/Photo (1).png",
+  "public/Photo (2).png",
+  "public/Photo (3).png"
 ];
 
 function Realizacje() {

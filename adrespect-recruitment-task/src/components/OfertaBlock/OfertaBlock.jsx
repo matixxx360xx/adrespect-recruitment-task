@@ -18,10 +18,9 @@ function Oferta() {
 
       <article className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-[32px] lg:gap-[64px] w-full max-w-[1440px] px-0 md:px-[40px] lg:px-[88px]">
 
-        {/* Karta 1 */}
         <a href="#projekty" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="public/pencil.png" alt="Projekty" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
@@ -40,10 +39,9 @@ function Oferta() {
           </span>
         </a>
 
-        {/* Karta 2 */}
         <a href="#wizualizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="public/eye.png" alt="Wizualizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">
@@ -62,10 +60,9 @@ function Oferta() {
           </span>
         </a>
 
-        {/* Karta 3 */}
         <a href="#realizacje" className="flex flex-col justify-between items-start p-6 sm:p-[40px] gap-8 w-full bg-white rounded-[28px] cursor-pointer transition-all duration-300 hover:-translate-y-2 active:-translate-y-2 hover:shadow-xl active:shadow-xl group">
           <div className="flex flex-col items-start gap-8 w-full">
-            <img src="src/assets/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
+            <img src="public/stars.png" alt="Realizacje" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-110" />
 
             <div className="flex flex-col gap-3 w-full">
               <h3 className="font-['Montserrat'] font-medium text-[24px] md:text-[28px] leading-[115%] tracking-[-0.05em] text-[#111111] transition-colors duration-300 group-hover:text-[#1B5B31] group-active:text-[#1B5B31]">

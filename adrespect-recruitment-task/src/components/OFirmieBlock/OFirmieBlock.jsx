@@ -3,7 +3,7 @@ function OFirmie() {
     <>
       <section className="flex flex-col md:flex-row items-center p-0 gap-[170px] w-full md:min-h-[720px] bg-[#1B5B31] mx-auto overflow-hidden">
         <div className="w-full md:w-1/2 h-[350px] sm:h-[500px] md:h-[720px] flex-none order-0">
-          <img src="src/assets/hause.png" className="w-full h-full object-cover -scale-x-100" />
+          <img src="public/hause.png" className="w-full h-full object-cover -scale-x-100" />
         </div>
 
         <div className="flex flex-col items-start pl-6 pr-6 md:pl-0 md:pr-[96px] py-12 md:py-0 gap-[40px] md:w-1/2 max-w-[596px] flex-none order-1">
